@@ -1,97 +1,94 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <meta name="viewport" content="width=640" />
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Dawnflying.github.com : " />
 
-    <link rel="stylesheet" href="stylesheets/core.css" media="screen"/>
-    <link rel="stylesheet" href="stylesheets/mobile.css" media="handheld, only screen and (max-device-width:640px)"/>
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css"/>
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
 
-    <script type="text/javascript" src="javascripts/modernizr.js"></script>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript" src="javascripts/headsmart.min.js"></script>
-    <script type="text/javascript">
-      $(document).ready(function () {
-        $('#main_content').headsmart()
-      })
-    </script>
-    <title>Dawnflying.github.com by Dawnflying</title>
+    <title>Dawnflying.github.com</title>
   </head>
 
   <body>
-    <a id="forkme_banner" href="https://github.com/Dawnflying">View on GitHub</a>
-    <div class="shell">
 
-      <header>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <h1>Dawnflying.github.com</h1>
-            <h2></h2>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-      </header>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/Dawnflying">View on GitHub</a>
 
-      <div id="no-downloads">
-        <span class="inner">
-        </span>
-      </div>
+          <h1 id="project_title">Dawnflying.github.com</h1>
+          <h2 id="project_tagline"></h2>
 
+        </header>
+    </div>
 
-      <span class="banner-fix"></span>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="jekyll-bootstrap" class="anchor" href="#jekyll-bootstrap"><span class="octicon octicon-link"></span></a>Jekyll-Bootstrap</h1>
 
+<p>The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages</p>
 
-      <section id="main_content">
-        <h3>
-<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome to GitHub Pages.</h3>
+<h2>
+<a name="usage" class="anchor" href="#usage"><span class="octicon octicon-link"></span></a>Usage</h2>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+<p>For all usage and documentation please see: <a href="http://jekyllbootstrap.com">http://jekyllbootstrap.com</a></p>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+<h2>
+<a name="version" class="anchor" href="#version"><span class="octicon octicon-link"></span></a>Version</h2>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+<p>0.3.0 - stable and versioned using <a href="http://semver.org/">semantic versioning</a>.</p>
 
-<h3>
-<a name="designer-templates" class="anchor" href="#designer-templates"><span class="octicon octicon-link"></span></a>Designer Templates</h3>
+<p><strong>NOTE:</strong> 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't <em>look</em> like the old version.
+However, the actual API has not changed at all.
+You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.</p>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+<h2>
+<a name="contributing" class="anchor" href="#contributing"><span class="octicon octicon-link"></span></a>Contributing</h2>
 
-<h3>
-<a name="rather-drive-stick" class="anchor" href="#rather-drive-stick"><span class="octicon octicon-link"></span></a>Rather Drive Stick?</h3>
+<p>This repository tracks 2 projects:</p>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
+<ul>
+<li>
+<p><strong>Jekyll-Bootstrap Framework.</strong>
+The framework for which users should clone and build their blog on top of is available in the master branch.</p>
 
-<h3>
-<a name="authors-and-contributors" class="anchor" href="#authors-and-contributors"><span class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<p>To contribute to the framework please make sure to checkout your branch based on <code>jb-development</code>!!
+This is very important as it allows me to accept your pull request without having to publish a public version release.</p>
 
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
+<p>Small, atomic Features, bugs, etc.
+Use the <code>jb-development</code> branch but note it will likely change fast as pull requests are accepted.
+Please rebase as often as possible when working.
+Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.</p>
 
-<h3>
-<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+<p>For Big Features or major API extensions/edits:
+This is the one case where I'll accept pull-requests based off the master branch.
+This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
+Translation : it might take a bit longer so please be patient! (but sincerely thank you).</p>
+</li>
+<li><p><strong>Jekyll-Bootstrap Documentation Website.</strong>
+The documentation website at <a href="http://jekyllbootstrap.com">http://jekyllbootstrap.com</a> is maintained in the gh-pages branch.
+Please fork and contribute documentation additions to this branch only.</p></li>
+</ul><p>The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!</p>
 
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
+<h2>
+<a name="license" class="anchor" href="#license"><span class="octicon octicon-link"></span></a>License</h2>
+
+<p><a href="http://opensource.org/licenses/MIT">MIT</a></p>
       </section>
+    </div>
 
-      <footer>
-        <span class="ribbon-outer">
-          <span class="ribbon-inner">
-            <p>Projects by <a href="https://github.com/Dawnflying">Dawnflying</a> can be found on <a href="https://github.com/Dawnflying">GitHub</a></p>
-          </span>
-          <span class="left-tail"></span>
-          <span class="right-tail"></span>
-        </span>
-        <p>Generated with <a href="http://pages.github.com">GitHub Pages</a> using Merlot</p>
-        <span class="octocat"></span>
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
       </footer>
-
     </div>
 
     
+
   </body>
 </html>
