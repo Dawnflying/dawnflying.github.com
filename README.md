@@ -1,46 +1,125 @@
-# Jekyll-Bootstrap
+#项目简述#
 
-The quickest way to start and publish your Jekyll powered blog. 100% compatible with GitHub pages
-
-## Usage
-
-For all usage and documentation please see: <http://jekyllbootstrap.com>
-
-## Version
-
-0.3.0 - stable and versioned using [semantic versioning](http://semver.org/).
-
-**NOTE:** 0.3.0 introduces a new theme which is not backwards compatible in the sense it won't _look_ like the old version.
-However, the actual API has not changed at all.
-You might want to run 0.3.0 in a branch to make sure you are ok with the theme design changes.
-
-## Contributing
-
-This repository tracks 2 projects:
-
-- **Jekyll-Bootstrap Framework.**
-  The framework for which users should clone and build their blog on top of is available in the master branch.
-
-  To contribute to the framework please make sure to checkout your branch based on `jb-development`!!
-  This is very important as it allows me to accept your pull request without having to publish a public version release.
-
-  Small, atomic Features, bugs, etc.
-  Use the `jb-development` branch but note it will likely change fast as pull requests are accepted.
-  Please rebase as often as possible when working.
-  Work on small, atomic features/bugs to avoid upstream commits affecting/breaking your development work.
-
-  For Big Features or major API extensions/edits:
-  This is the one case where I'll accept pull-requests based off the master branch.
-  This allows you to work in isolation but it means I'll have to manually merge your work into the next public release.
-  Translation : it might take a bit longer so please be patient! (but sincerely thank you).
-
-- **Jekyll-Bootstrap Documentation Website.**
-  The documentation website at <http://jekyllbootstrap.com> is maintained in the gh-pages branch.
-  Please fork and contribute documentation additions to this branch only.
-
-The master and gh-pages branch do not share the same ancestry. Please treat them as completely separate git repositories!
+   本项目名称为LabLink。
+   LabLink是一个基于实验室的社交网络，通过该网络，实验室与实验室可以方便的进行交流。同时作为实验室的重要组成部分，
+   研究生和导师都可以方便的加入参与到交流中来。在实验室的框架下，每个人在实验室中又是作为独立的个体存在的，人与人之间
+又形成了另外的关系网，通过这两层不同层面的关系网，可以更好的促进人与人，人与实验室，实验室与实验室的交流，不管是对
+于个人的学术研究、就业工作以及实验室的发展都具有良好的促进作用。
+   在后期，我们还准备将实验室以外的大众作为新的群体加入到系统中来，促进社会资源对科研学术的投入。
 
 
-## License
+#功能划分#
+	
+##前述##
+  首先，实验室是我们系统的核心，实验室作为现实存在很少变化的社会单位，作为社交单位具有天然的可信性，安全性有一定的保
+证。再者，一方面实验室作为社会中特殊的单位，成员代表了中国的高级知识分子阶层，对国家的发展起到举足轻重的左右；另一方
+面，这个庞大的群体并没有被很好的组织起来，传统的以学校院系为单位的划分方式，在各个实验室之间形成了天然的屏障，不利于
+实验室之间的交流，更不利于知识的碰撞和传播，降低了科研的创新能力。
+  按照静态的组织结构和动态的活动交互，可以将系统划分为三个部分。
 
-[MIT](http://opensource.org/licenses/MIT)
+  + 组织结构
+ 
+  + 个人系统
+
+  + 活动交互
+
+  + 项目合作
+
+##组织结构##
+  组织结构我们可以按照传统的实验室的结构来划分。提供学校、实验室、个人索引
+***   
+  + 学校
+      1. 学校的属性，学校简介。
+      2. 学校的组织结构，包括学院、系别、实验室
+***
+  + 实验室
+      1. 名称、老板、研究方向、项目、成果、成员、活动
+***
+  + 个人
+      1. 老板 个人简介、成果，最好提供老板主页模板
+      2. 管理员
+      3. 研究生 个人信息、专业、特长、参与的活动、参与的项目、好友、合作伙伴、关注的实验室。
+***
+
+##个人系统##
+  + 个人
+      1. 集成个人的文献检索、推送系统，根据个人的专业、研究点、推送相应的论文。会议提醒、导师推荐。
+      2. 工作推荐、简历生成、职业规划等等。
+
+##活动交互##
+  活动是社交的核心，提供活动索引。(tags: Linux 同城 交友 学术 etc.)
+***
+  + 学校与实验室
+    1. 如何快速定位学校
+    2. 如何快速定位实验室
+*** 
+  + 实验室之间
+    1. 学术交流，例如实验室发起的学习讨论组、邀请的讲座，提供在线的学习方式，在线讲座（类似于风云RTMP、mooc），需要体现出交互性。
+    2. 项目合作，启动项目、项目寻求合作、项目组。
+    3. 文娱活动，策划、组织、实施、控制、反馈。（旅游、游戏、赛事、晚会）（__移动端的接入很重要__）
+***
+  + 人与人之间
+    1. 即时消息
+    2. 状态发布
+    3. 信息推送
+***
+##项目合作##
+待定
+
+
+#主页#
+  将上面的功能部署在下面的界面上
+##实验室界面##
+***
+  * 实验室简要信息
+  * 老板简要信息
+  * 研究生列表
+  * 项目列表
+  * 活动列表
+  * 最新动态
+  * 公告栏
+***  
+  
+
+##个人主页##
+***
+###个人###
+     * 个人状态
+     * 好友动态
+     * 关注的人的动态
+     * 关注实验室动态
+     * 关注项目动态
+     * 论文推荐
+     * 领域最新动态
+     * 活动推荐
+     * 本地活动
+***
+###游客###
+     * 个人资料
+     * 最新动态
+     * 对应实验室动态
+     * 正在参与的活动
+     * 共同好友
+     * 共同关注实验室及动态
+***
+##活动主页##
+***
+###活动管理###
+     * 活动名称（活动取消后，最好能保持一种活动关系，一般是志同道合的人）
+     * 活动基本信息，场地、时间、联系人、路线图
+     * 成员列表
+     * 即时通信
+     * 活动最新动态
+***
+###在线课程###
+     * 课程名称
+     * 讲演人信息
+     * RTMP直播
+     * 即时讨论
+     * 听众提问
+     * 听众讨论
+     * 讨论模式演讲模式
+***
+
+##项目主页##
+待定
